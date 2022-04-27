@@ -1,0 +1,52 @@
+.gallery {
+    text-align: center;
+    &-icon {
+        &__margin {
+            margin: 0 40px;
+        }
+        &:hover {
+            color: #009DD9;
+        }
+        &:focus {
+            color: #009DD9;
+            border-bottom: 2px solid #009DD9;
+        }
+        color: #FFFFFF;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 10px;
+        font-size: 18px;
+        &__icon {
+            margin-right: 10px;
+        }
+    }
+    &-img {
+        width: 1018px;
+        height: 600px
+    }
+    &-card {
+        &s {
+            margin-top: 100px;
+            @include flex;
+            justify-content: space-between;
+        }
+        @include flex;
+        flex-direction: column;
+        &__img {
+            width: 500px;
+            height: 300px;
+        }
+    }
+}
+.fotogallery-card {
+    &s {
+        @include flex;
+        flex-wrap: wrap;
+    }
+    &__img {
+        width: 506px;
+        height: 300px;
+    }
+}
+.margin {
+    margin-top: 0;
+}
